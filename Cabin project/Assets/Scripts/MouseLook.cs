@@ -35,7 +35,7 @@ public class MouseLook : MonoBehaviour
         {
             Debug.LogWarning($"{name} should be the child of an empty object!");
         }
-        a
+        
         if(transform.localPosition != Vector3.zero) 
         {
             Debug.LogWarning($"{name} should have a local space of (0,0,0)!");

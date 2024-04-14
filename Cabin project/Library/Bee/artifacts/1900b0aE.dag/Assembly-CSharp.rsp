@@ -356,6 +356,7 @@
 "Assets/Scripts/Interaction.cs"
 "Assets/Scripts/MouseLook.cs"
 "Assets/Scripts/NavigationWaypoint.cs"
+"Assets/Scripts/WaypointTeleporter.cs"
 -langversion:9.0
 
 /deterministic

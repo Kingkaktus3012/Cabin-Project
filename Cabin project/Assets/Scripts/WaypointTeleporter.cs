@@ -13,11 +13,6 @@ public class WaypointTeleporter : MonoBehaviour
     private bool waypointMenuState = true;
     [SerializeField] GameObject waypointMenu;
     [SerializeField] Transform[] waypoints;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -33,43 +28,43 @@ public class WaypointTeleporter : MonoBehaviour
             else
             {
                 waypointMenu.SetActive(true);
-                waypointMenuState = true;              
+                waypointMenuState = true;
             }
         }
         //teleports the player to the waypoints when the number buttons are pressed
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            player.transform.position = waypoints[0].position;
+            waypoints[0].GetComponent<NavigationWaypoint>().Activate();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            player.transform.position = waypoints[1].position;
+            waypoints[1].GetComponent<NavigationWaypoint>().Activate();
         }
         
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            player.transform.position = waypoints[2].position;
+            waypoints[2].GetComponent<NavigationWaypoint>().Activate();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            player.transform.position = waypoints[3].position;
+            waypoints[3].GetComponent<NavigationWaypoint>().Activate();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            player.transform.position = waypoints[4].position;
+            waypoints[4].GetComponent<NavigationWaypoint>().Activate();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-            player.transform.position = waypoints[5].position;
+            waypoints[5].GetComponent<NavigationWaypoint>().Activate();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
-            player.transform.position = waypoints[6].position;
+            waypoints[6].GetComponent<NavigationWaypoint>().Activate();
         }
     }
 }
